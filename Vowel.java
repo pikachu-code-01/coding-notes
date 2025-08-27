@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class vowel{
+public class Vowel{
     public static void main(String[] args) {
         Scanner AD = new Scanner(System.in);
         char ch = AD.next().charAt(0);
