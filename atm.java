@@ -2,9 +2,9 @@ import java.util.Scanner;
 public class atm{
 public static void main(String[] args){ 
     Scanner AD = new Scanner(System.in);
-    double balance=AD.nextInt();
-    double amount = AD.nextInt();
-    boolean transmit = false;
+    double balance=AD.nextDouble();
+    double amount = AD.nextDouble();
+    boolean transmit ;
     if(amount % 100 != 0){
         System.out.println("Multiples of hundred only approved");
         transmit= false;
