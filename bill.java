@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class bill{
     public static void main(String[] args) {
-        Scanner AD = new Scanner(System.in);
+      try(  Scanner AD = new Scanner(System.in);){
         int units = AD.nextInt();
         double amount = 0;
         if(units <= 100){
@@ -14,5 +14,7 @@ public class bill{
             amount = units * 4.00 ;
         }
         System.out.println("Amount =" +(int)amount);
+        AD.close();
     }
+}
 }

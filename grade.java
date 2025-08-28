@@ -2,7 +2,7 @@
 import java.util.Scanner;
 public class grade{
     public static void main(String[] args){
-        Scanner AD = new Scanner(System.in);
+       try( Scanner AD = new Scanner(System.in);){
         int mark = AD.nextInt();
         if(mark >=90){
             System.out.println("Grade A");
@@ -17,4 +17,5 @@ public class grade{
             System.out.println("Grade D");
         }
     }
+}
 }

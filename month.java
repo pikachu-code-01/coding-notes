@@ -2,7 +2,7 @@
 import java.util.Scanner;
 public class month{
     public static void main(String[] args) {
-        Scanner AD = new Scanner (System.in);
+        try(Scanner AD = new Scanner (System.in);){
         int month = AD.nextInt();
         // System.out.println(Month.of(month));
 
@@ -26,6 +26,7 @@ public class month{
             default->  System.out.println("Invalid Month");
         }
     }
+}
 }
 // import java.time.Month;
 //  if (month >= 1 && month <= 12) {

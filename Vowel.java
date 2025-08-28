@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Vowel{
     public static void main(String[] args) {
-        Scanner AD = new Scanner(System.in);
+        try(Scanner AD = new Scanner(System.in);){
         char ch = AD.next().charAt(0);
         char newCh = Character.toUpperCase(ch);
         if(newCh == 'A' || newCh == 'E'|| newCh == 'I'|| newCh == 'O' || newCh == 'U')
@@ -14,5 +14,6 @@ public class Vowel{
         else {
             System.out.println("Not a letter");
         }
+      }
   }
 }
