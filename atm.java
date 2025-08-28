@@ -13,7 +13,7 @@ public static void main(String[] args){
         System.out.println("Insufficient Balance");
         transmit= false;
     }
-    else {
+    else {   //Changed
         balance -= amount;
         System.out.println("Successfully Transferd");
          transmit = true;
